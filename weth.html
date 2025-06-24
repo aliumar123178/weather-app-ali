@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./weather_icon-removebg-preview.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/weatherapp/weth.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+</head>
+<body>
+ <div class="container">
+<div class="search-container">
+            <input type="text" spellcheck="false" placeholder="Enter the city name" id="searchBar">
+            <button id="search-btn" aria-label="Search">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+        </div>
+        <div class="inside-container">
+            <h1 class="location">--</h1>
+            <h1 id="temperature">-- °C</h1>
+            <div class="icon-description">
+                <img id="icon" alt="image"/>
+                <h3 id="weatherCondition">--</h3>
+</div>
+            <div class="extra-section">
+                <h3 class="box" id="feelsLike"></h3>
+                <h3 class="box" id="humidity"></h3>
+                <h3 class="box" id="windSpeed"></h3>
+                <h4 class="box" id="visibility"></h4>
+            </div>
+            <h6 id="time"></h6>
+            <h5 id="moreDetails"><i class="icon fa-solid fa-angle-up"></i> <span class="more-less">See less details</span></h5>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="second-container-inside">
+            <h4 id="pressure">Pressure</h4>
+            <h4 id="maxTemp">Max temperature</h4>
+            <h4 id="minTemp">minimum temperature</h4>
+            <h4 id="country">country</h4>
+            <h4 id="clouds">clouds</h4>
+            </div>
+    </div>
+    <script src="/weatherapp/weth.js"></script>
+</body>
+</html>
